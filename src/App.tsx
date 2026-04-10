@@ -5,41 +5,83 @@ import ReviveButton from './components/ReviveButton'
 
 function App() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-[#050505] pb-10 selection:bg-red-900 selection:text-white">
       <Hero />
 
-      <div className="max-w-6xl mx-auto px-4 mt-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="max-w-7xl mx-auto px-4 mt-8 relative z-10">
+        <div className="text-center mb-20">
+          <h2 className="text-3xl md:text-4xl font-black text-white px-8 inline-block border-b-4 border-red-800 pb-4 uppercase tracking-[0.2em]">
+            Küresel Yıkım Raporu
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Counter
-            label="Dünya Nüfusu"
-            initialValue={8118000000}
-            finalValue={8117999999}
-            delay={2}
-            trend="down"
-            description="Küresel insan populasyonunda anlık düşüş."
+            label="Marlboro Piyasa Değeri"
+            initialValue={154000000000}
+            finalValue={4200000000}
+            delay={1}
+            trend="crash"
+            prefix="$"
+            changeText="İFLASIN EŞİĞİNDE 📉"
+            description="Musab'ın günlük asgari 1 paketlik düzenli tüketimi durunca, küresel tütün endüstrisi tarihi bir çöküş yaşadı."
           />
 
           <Counter
-            label="Çözülemeyen Kod Bugları"
+            label="Silikon Vadisi Özgüven İndeksi"
+            initialValue={100}
+            finalValue={0}
+            delay={2}
+            trend="crash"
+            suffix="%"
+            changeText="TAMAMEN SIFIRLANDI 💀"
+            description="Dünyadaki tüm yazılımcı egosunun %90'ını tek başına sırtlayan Musab gidince, sektörde sadece junior'lar kaldı."
+          />
+
+          <Counter
+            label="Çözülemeyen Proje Bug'ları"
             initialValue={14205}
-            finalValue={999999}
+            finalValue={89547362}
             delay={3}
             trend="up"
-            changeText="+Sonsuz"
-            prefix=">"
-            description="Musab gittikten sonra patlayan projeler..."
+            changeText="+ YAZILIM ÇÖKTÜ 💥"
+            highlightClass="text-yellow-500"
+            description="Musab kod yazmayı bırakınca GitHub sunucuları çıldırdı. Herkesin kodu aynı anda patladı. Düzeltilemiyor."
           />
 
           <Counter
-            label="Küresel Kahve Tüketimi"
+            label="Enerji İçeceği Endüstrisi"
             initialValue={100}
-            finalValue={85}
+            finalValue={12}
             delay={4}
-            trend="down"
+            trend="crash"
             suffix="%"
-            changeText="-15%"
-            description="Starbucks hisselerinde ani düşüş yaşandı."
+            changeText="-88% DÜŞÜŞ 🥤"
+            description="Günde litrelerce tüketilen kafein alımı durduğu için küresel kafein borsası çöktü."
           />
+
+          <Counter
+            label="Açık Kalan Temiz Terminal"
+            initialValue={1}
+            finalValue={0}
+            delay={5}
+            trend="crash"
+            changeText="SİSTEM KAPANDI ⬛"
+            description="O efsanevi siyah ekran ve imleç, artık sonsuza dek hareketsiz..."
+          />
+
+          {/* Ego Quote Card */}
+          <div className="bg-gradient-to-br from-zinc-900 to-black p-8 rounded-2xl border border-zinc-800 flex flex-col justify-center items-center text-center shadow-[0_0_40px_rgba(0,0,0,0.5)] transform hover:scale-[1.02] transition-transform duration-500 hover:border-red-900/50">
+            <h3 className="text-zinc-600 font-bold tracking-[0.2em] uppercase mb-6 text-sm">Altın Kural #1</h3>
+            <p className="text-red-50 font-serif italic text-2xl leading-snug">
+              "Benim yazdığım kodda bug olmaz, <br/>
+              sadece henüz sisteminizin kaldıramadığı <br/>
+              <span className="text-red-500 font-bold">mükemmel özellikler</span> vardır."
+            </p>
+            <div className="mt-8 pt-6 border-t border-zinc-800 w-full">
+              <p className="text-red-700 font-black tracking-widest">— MUSAB USTUN</p>
+            </div>
+          </div>
         </div>
       </div>
 
