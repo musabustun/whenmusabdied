@@ -3,6 +3,8 @@ import Counter from './components/Counter'
 import NewsTicker from './components/NewsTicker'
 import ReviveButton from './components/ReviveButton'
 import Testimonials from './components/Testimonials'
+import TerminalLogs from './components/TerminalLogs'
+import DoomsdayTimeline from './components/DoomsdayTimeline'
 
 function App() {
   return (
@@ -98,6 +100,8 @@ function App() {
       </div>
 
       <Testimonials />
+      <TerminalLogs />
+      <DoomsdayTimeline />
 
       <NewsTicker />
       <ReviveButton />
