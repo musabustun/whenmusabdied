@@ -2,6 +2,7 @@ import Hero from './components/Hero'
 import Counter from './components/Counter'
 import NewsTicker from './components/NewsTicker'
 import ReviveButton from './components/ReviveButton'
+import Testimonials from './components/Testimonials'
 
 function App() {
   return (
@@ -95,6 +96,8 @@ function App() {
           />
         </div>
       </div>
+
+      <Testimonials />
 
       <NewsTicker />
       <ReviveButton />
