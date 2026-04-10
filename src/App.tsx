@@ -17,57 +17,36 @@ function App() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Counter
-            label="Marlboro Piyasa Değeri"
-            initialValue={154000000000}
-            finalValue={4200000000}
+            label="Parliament Midnight Blue Hisseleri"
+            initialValue={350000000000}
+            finalValue={12}
             delay={1}
             trend="crash"
             prefix="$"
-            changeText="İFLASIN EŞİĞİNDE 📉"
-            description="Musab'ın günlük asgari 1 paketlik düzenli tüketimi durunca, küresel tütün endüstrisi tarihi bir çöküş yaşadı."
+            changeText="ÜRETİM DURDURULDU 📉"
+            description="Musab'ın kesintisiz desteği son buldu. Philip Morris, Parliament Midnight Blue serisini sonsuza dek rafa kaldırdığını duyurdu."
           />
 
           <Counter
-            label="Silikon Vadisi Özgüven İndeksi"
+            label="Nescafe Express Original & Caramel Pazar Payı"
             initialValue={100}
-            finalValue={0}
+            finalValue={3}
+            delay={1.5}
+            trend="crash"
+            suffix="%"
+            changeText="KÜRESEL KAOS ☕"
+            description="Soğuk kahve endüstrisi tek müşteriyle ayakta kalıyormuş. Teneke kahve fabrikaları kepenk indirdi."
+          />
+
+          <Counter
+            label="Fuse tea (Mango & Şeftali) Stokları"
+            initialValue={8900000}
+            finalValue={14589000000}
             delay={2}
-            trend="crash"
-            suffix="%"
-            changeText="TAMAMEN SIFIRLANDI 💀"
-            description="Dünyadaki tüm yazılımcı egosunun %90'ını tek başına sırtlayan Musab gidince, sektörde sadece junior'lar kaldı."
-          />
-
-          <Counter
-            label="Çözülemeyen Proje Bug'ları"
-            initialValue={14205}
-            finalValue={89547362}
-            delay={3}
             trend="up"
-            changeText="+ YAZILIM ÇÖKTÜ 💥"
+            changeText="STOK FAZLASI 🧊"
             highlightClass="text-yellow-500"
-            description="Musab kod yazmayı bırakınca GitHub sunucuları çıldırdı. Herkesin kodu aynı anda patladı. Düzeltilemiyor."
-          />
-
-          <Counter
-            label="Enerji İçeceği Endüstrisi"
-            initialValue={100}
-            finalValue={12}
-            delay={4}
-            trend="crash"
-            suffix="%"
-            changeText="-88% DÜŞÜŞ 🥤"
-            description="Günde litrelerce tüketilen kafein alımı durduğu için küresel kafein borsası çöktü."
-          />
-
-          <Counter
-            label="Açık Kalan Temiz Terminal"
-            initialValue={1}
-            finalValue={0}
-            delay={5}
-            trend="crash"
-            changeText="SİSTEM KAPANDI ⬛"
-            description="O efsanevi siyah ekran ve imleç, artık sonsuza dek hareketsiz..."
+            description="Tüketim aniden durunca depolarda yer kalmadı. Hükümetler okyanuslara Fuse tea dökmek için acil toplanıyor."
           />
 
           {/* Ego Quote Card */}
@@ -79,9 +58,41 @@ function App() {
               <span className="text-red-500 font-bold">mükemmel özellikler</span> vardır."
             </p>
             <div className="mt-8 pt-6 border-t border-zinc-800 w-full">
-              <p className="text-red-700 font-black tracking-widest">— MUSAB USTUN</p>
+              <p className="text-red-700 font-black tracking-widest">— MUSAB USTUN (5 EKİ 2007 - ∞)</p>
             </div>
           </div>
+
+          <Counter
+            label="Silikon Vadisi Özgüven İndeksi"
+            initialValue={100}
+            finalValue={0}
+            delay={2.5}
+            trend="crash"
+            suffix="%"
+            changeText="TAMAMEN SIFIRLANDI 💀"
+            description="Dünyadaki tüm yazılımcı egosunun %90'ını tek başına sırtlayan Musab gidince, sektör sadece dökümantasyon okuyanlara kaldı."
+          />
+
+          <Counter
+            label="Çözülemeyen Proje Bug'ları"
+            initialValue={14205}
+            finalValue={89547362}
+            delay={3}
+            trend="up"
+            changeText="+ YAZILIM ÇÖKTÜ 💥"
+            highlightClass="text-yellow-500"
+            description="O, kod yazmayı bırakınca GitHub sunucuları çıldırdı. Herkesin kodu aynı anda patladı, düzeltilemiyor."
+          />
+
+          <Counter
+            label="Küresel Redbull Rezervi (Nadiren İçilirdi)"
+            initialValue={0}
+            finalValue={404}
+            delay={3.5}
+            trend="crash"
+            changeText="BULUNAMADI 🪫"
+            description="Çok sevmezdi ama içtiğinde Redbull içerdi. O gidince Redbull'un kanatları kırıldı."
+          />
         </div>
       </div>
 

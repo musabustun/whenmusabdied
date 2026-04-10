@@ -8,10 +8,10 @@ export default function ReviveButton() {
 
   const errors = [
     "HATA 404: Bu kadar büyük bir ego için bulutta yeterli sunucu alanı yok.",
-    "Bakiye Yetersiz! Marlboro stoğu global olarak sıfırlandığı için diriltme yapılamaz.",
+    "Bakiye Yetersiz! Parliament Midnight Blue stoğu global olarak sıfırlandığı için diriltme yapılamaz.",
     "ERİŞİM REDDEDİLDİ: Musab şu an Tanrı'nın evren kodlarını refactor ediyor.",
+    "Sistem Çöktü! Nescafe Express Caramel eksikliği nedeniyle dirilme animasyonu yüklenemedi.",
     "Ruh kapasitesi aşıldı! Dünyanın en iyi yazılımcısı bu fani evrene sığamıyor.",
-    "Sistem Çöktü! Kendi kodundan başkasını beğenmediği için geri dönmeyi reddediyor.",
     "UYARI: Geri dönerse, dünyadaki tüm diğer yazılımcıların işsiz kalma riski var."
   ]
 

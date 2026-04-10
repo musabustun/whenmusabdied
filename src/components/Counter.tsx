@@ -23,8 +23,8 @@ export default function Counter({ label, initialValue, finalValue, prefix = "", 
     const startTimer = setTimeout(() => {
       setHasStarted(true);
 
-      const duration = 2500; // 2.5 saniyelik dramatik sayaç
-      const steps = 60;
+      const duration = 4000; // 4 saniyelik daha dramatik sayaç
+      const steps = 80;
       const stepTime = Math.abs(Math.floor(duration / steps));
 
       let currentStep = 0;
@@ -32,8 +32,8 @@ export default function Counter({ label, initialValue, finalValue, prefix = "", 
       const interval = setInterval(() => {
         currentStep++;
         const progress = currentStep / steps;
-        // Ease out etki: başlarda hızlı, sona doğru yavaşlar
-        const easeProgress = progress * (2 - progress);
+        // Quartic ease out etki: başlarda inanılmaz hızlı, sona doğru çok yavaşlar
+        const easeProgress = 1 - Math.pow(1 - progress, 5);
 
         const current = Math.round(initialValue + (finalValue - initialValue) * easeProgress);
         setDisplayValue(current);

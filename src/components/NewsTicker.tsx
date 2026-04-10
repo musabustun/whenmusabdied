@@ -2,11 +2,13 @@ import { motion } from 'framer-motion'
 
 const news = [
   "CUMHURBAŞKANLIĞI: 'Dünyanın en iyi yazılımcısını kaybettik, ülkemizde 3 gün ulusal yas ilan edilmiştir...'",
-  "MARLBORO CEO'su AÇIKLADI: 'Musab Ustun'un vedasıyla birlikte hisselerimizde %45'lik tarihi bir çöküş yaşıyoruz, üretim vardiyaları durduruldu...'",
-  "SİLİKON VADİSİ ŞOKTA: 'O olmadan yapay zeka projelerinin fişini çekmek zorunda kalabiliriz...'",
-  "DÜNYA SAĞLIK ÖRGÜTÜ: 'Küresel enerji içeceği ve kahve tüketiminde bir gecede %60'lık bir azalma tespit edildi...'",
+  "PHILIP MORRIS AÇIKLADI: 'Parliament Midnight Blue stokları tarihinde ilk defa üretim fazlası verdi, fabrikaları kapatıyoruz...'",
+  "NESTLÉ KRİZDE: 'Nescafe Express Original ve Caramel üretim hatları tek tüketicimizin gidişiyle durduruldu...'",
+  "COCA-COLA ŞOKTA: 'Fuse tea Mango ve Şeftali depoları taşıyor, ürünleri denize dökmek için izin bekliyoruz...'",
+  "REDBULL: 'Kanatlarımız kırıldı, nadiren de olsa bizi tercih ediyordu...'",
+  "SİLİKON VADİSİ ÇÖZÜMSÜZ: 'O olmadan yapay zeka projelerinin fişini çekmek zorunda kalabiliriz...'",
   "LINUS TORVALDS: 'Benden sonraki tek dahi oydu. Artık Linux çekirdeğini kendi kaderine terk etme vakti geldi...'",
-  "SON DAKİKA: Musab'ın yazdığı son satır kodlar, incelenmek üzere NASA tarafından karantinaya alındı...",
+  "SON DAKİKA: Musab'ın (5 Ekim 2007 - Sonsuzluk) yazdığı son satır kodlar, incelenmek üzere NASA tarafından karantinaya alındı...",
   "TÜM DÜNYA KLAVYELERİNDE KEPENK: Kullanıcılar saygı duruşu olarak 'E', 'G' ve 'O' tuşlarına 1 dakika boyunca basmıyor...",
   "STACKOVERFLOW: 'Zaten her şeyi kendi yazıyordu, bizim siteye de girmediği için trafiğimiz bitti...'",
 ];
